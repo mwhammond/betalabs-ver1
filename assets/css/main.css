@@ -133,7 +133,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/mentors3b.jpg) no-repeat center top;
+	background: url(../img/mentors3c.jpg) no-repeat center top;
 	margin-top: -10px;
 	padding-top: 20px;
 	text-align:center;
@@ -187,12 +187,12 @@ a:after {
 	background: #ebebeb;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	
+	text-align: left;
 }
 
 #lg h4 {
 	font-weight: 700;
-    text-align: left;
+    text-align: center;
 }
 
 
