@@ -187,11 +187,12 @@ a:after {
 	background: #ebebeb;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: center;
+	
 }
 
 #lg h4 {
 	font-weight: 700;
+    text-align: left;
 }
 
 
