@@ -16,6 +16,11 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,6 +29,9 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
+
+
+
 
   <body>
 
@@ -46,21 +54,21 @@
 		<div class="row centered">
 			<br><br>
 			<div class="col-lg-4">
-				<i class="fa fa-heart"></i>
+				<i class="fa fa-cog"></i>
 				<h4>Industry expert</h4>
-				<p>Gain early exposure to a curated collection of the worlds most exciting start-ups looking for specific sector expertise ranging from oil & gas to education.</p>
+				<p>Gain early exposure to a curated collection of the worlds most exciting start-ups looking for specific sector expertise across all fields, from consumer goods, to oil & gas, to education.</p>
 			</div><!-- col-lg-4 -->
 
 			<div class="col-lg-4">
 				<i class="fa fa-laptop"></i>
 				<h4>Start-up</h4>
-				<p>Quickly find start-up friendly specific industry advisors to help you understand and break into new markets</p>
+				<p>Quickly find start-up friendly industry advisors who can offer an insider’s industry perspective  and help you to better understand and gain traction in your target markets.</p>
 			</div><!-- col-lg-4 -->
 
 			<div class="col-lg-4">
-				<i class="fa fa-trophy"></i>
+				<i class="fa fa-level-up"></i>
 				<h4>Accelerator / Investor</h4>
-				<p>Increase the speed to product / market fit in your portfolio and unlock value in hard to reach sectors whilst widening your mentor pool.</p>
+				<p>Add a wide range of strong industry insight to your portfolio companies to accelerate product / market fit, explore new markets and improve returns.</p>
 			</div><!-- col-lg-4 -->
 		</div><!-- row -->
 		<br>
@@ -71,37 +79,172 @@
 <!-- CALL TO ACTION -->
 
 
-	<!-- CALL TO ACTION -->
-	<div id="call">
-		<div class="container">
-			<div class="row">
-				<h3>RECIEVE UPDATES ON NEW START-UPS AND ADVISORS VIA EMAIL</h3>
-				<div class="col-lg-8 col-lg-offset-2">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+<!-- CALL TO ACTION -->
+<div id="call">
+	<div class="container">
+		<div class="row">
+			<h3>Register your interest</h3>
+			
 
-					<form class="form-inline" role="form">
+			<div class="col-lg-8 col-lg-offset-2">
+
+				<p>The platform is currently in alpha and we are actively looking for senior industry expertise and start-ups with interesting expertise requirements. If you would like to find out more please register below.</p>
+
+				<form role="form" action="http://imperialcreatelab.createsend.com/t/d/s/pklui/" method="post" id="registerform">
+
+
+					<div class="form-inline">
 						<div class="form-group">
-							<label class="sr-only" for="exampleInputEmail2">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+
+							<label class="sr-only" for="fieldEmail">Email address</label>
+							<div class="col-xl-6">
+								<input id="fieldEmail" name="cm-pklui-pklui" type="email" placeholder="Enter email" class="form-control" required />
+
+							</div>
 						</div>
 
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Startup
-							</label>
+						<div class="btn-group">
+							<select class="form-control" id="fieldklsl" name="cm-fo-klsl">
+								<option selected value="Advisor">Register as...</option>
+								<option value="79074">Advisor</option>
+								<option value="79075">Start-up</option>
+								<option value="79076">Other</option>
+							</select>
 						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Expert
-							</label>
+
+					</div>
+
+
+					<br>
+
+					<!-- Advisor group -->
+
+					<div id="79074" class="group" >
+
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="sr-only" for="fieldklsr">Expertise</label>
+								<div class="col-sm-6 col-lg-offset-3">
+									<input type="text" class="form-control" id="fieldklsr" name="cm-f-klsr" placeholder="Your areas of expertise e.g. retail, flow chemistry">
+								</div>
+
+							</div>
+
 						</div>
-						<button type="submit" class="btn btn-green btn-lg">Sign up</button>
-					</form>	
+
+						<div class="form-inline">
+
+							<div class="form-group">
+
+								<label class="sr-only" for="fieldklst">Website</label>
+
+								<input type="url" class="form-control" id="fieldklst" name="cm-f-klst" placeholder="LinkedIn profile (optional)">
+
+							</div>
+							<div class="form-group">
+
+								<button type="submit" class="btn btn-success pull-right" onClick=”_gaq.push ([‘_trackEvent’,’Register’,’Advisor’]);">Register</button>
+
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- Startup group -->
+
+					<div id="79075" class="group" >
+
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="sr-only" for="fieldklsy">Expertise</label>
+								<div class="col-sm-6 col-lg-offset-3">
+									<input type="text" class="form-control" id="fieldklsy" name="cm-f-klsy" placeholder="Areas of expertise required (optional)">
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="form-inline">
+
+							<div class="form-group">
+
+								<label class="sr-only" for="fieldklsi">Website</label>
+
+								<input type="url" class="form-control" id="fieldklsi" name="cm-f-klsi" placeholder="Company website">
+
+							</div>
+							<div class="form-group">
+
+								<button type="submit" class="btn btn-success pull-right" onClick=”_gaq.push ([‘_trackEvent’,’Register’,’Start-up’]);">Register</button>
+
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Other group -->
+
+
+					<div id="79076" class="group" >
+
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="sr-only" for="fieldklsj">Expertise</label>
+								<div class="col-sm-6 col-lg-offset-3">
+									<input type="text" class="form-control" id="fieldklsj" name="cm-f-klsj" placeholder="Areas of expertise required (optional)">
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="form-inline">
+
+							<div class="form-group">
+
+								<label class="sr-only" for="fieldklsd">Website</label>
+
+								<input type="url" class="form-control" id="fieldklsd" name="cm-f-klsd" placeholder="Your website">
+
+							</div>
+							<div class="form-group">
+<!--
+								<button type="submit" class="btn btn-success pull-right" onClick=”_gaq.push ([‘_trackEvent’,’Register’,’Other’]);">Register</button>
+-->
+							</div>
+						</div>
+
+					</div>
+
+
+				</form>
+
+
+				<div id="thankyou">
+						<h3>Thanks! We'll be in touch soon to see how we can help.</h3>
 
 				</div>
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- Call to action -->
+
+
+			</div>
+
+		</div><!-- row -->
+	</div><!-- container -->
+</div><!-- Call to action -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- CURRENT PROJECTS -->
@@ -123,20 +266,21 @@
 		
 		<div class="row mt">
 			<div class="col-lg-4">
-				<img class="img-responsive" src="assets/img/post01.jpg" alt="">
-				<h3><a href="#">Mavrx</a></h3>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
+				<img class="img-responsive" src="assets/img/washingmachine.jpg" alt="Aqdot technology">
+				<h3>Aqdot</h3>
+				<p><b>Case study</b><p>
+				<p>Aqdot is a Cambridge based spin out that has developed novel fabrication technology for smart capsules that possess customisable properties to suit the needs of a variety of industries. Neil MacGilp who had spent 30 years at Procter & Gamble worked with the team to position the technology for adoption in the FMCG industry. On the back of this Aqadot were able to successfully close a £1m funding round.</p>
+				<p><a href="http://www.aqdot.com/" target="_blank">Aqdot.com</a></p>
 			</div>
 			<div class="col-lg-4">
 				<img class="img-responsive" src="assets/img/post02.jpg" alt="">
-				<h3><a href="#">T-Index</a></h3>
+				<h3><a href="#">Case study: ClickMechanic</a></h3>
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 				<p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
 			</div>
 			<div class="col-lg-4">
 				<img class="img-responsive" src="assets/img/post03.jpg" alt="">
-				<h3><a href="#">Click Mechanic</a></h3>
+				<h3><a href="#">Seeking expertise: T-Index</a></h3>
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 				<p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
 			</div>		
@@ -189,7 +333,7 @@
 				<br>
 				<div class="col-lg-2"></div>
 				<div class="col-lg-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus elit, tincidunt nec turpis sed, accumsan iaculis ipsum. Nulla at augue auctor, tristique erat in, ultricies nunc. Mauris eget metus leo. Ut in mi lacinia, mattis nisl non, ultrices risus. Vestibulum aliquet aliquam ipsum ut ullamcorper. Pellentesque fringilla, massa vel rutrum consequat, nulla velit fermentum dolor, sed scelerisque.</p>
+				<p>We welcome an extremely wide range of expertise </p>
 				<br>
 				<br>
 				</div>
@@ -307,6 +451,59 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.min.js"></script>
 
  </body>
+
+
+ <script>
+
+$(document).ready(function () {
+    $('.group').hide();
+    $('#thankyou').hide();
+    $('#multiple').show();
+    $('#fieldklsl').change(function () {
+        $('.group').hide();
+        $('#'+$(this).val()).show();
+    })
+});
+
+
+</script>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#registerform').submit(function (e) {
+            e.preventDefault();
+            $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Error. Please reload the page and if this happens again contact mark.hammond@imperialinnovations.co.uk");
+                } else { // 200
+                    //alert("Success: " + data.Message);
+                    $('#registerform').hide();
+                    $('#thankyou').show();
+                    _gaq.push ([‘_trackEvent’,’Register’,’Total’]);
+                }
+            });
+        });
+    });
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48368772-1', 'mwhammond.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+
 </html>
