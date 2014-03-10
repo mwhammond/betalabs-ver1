@@ -1,10 +1,7 @@
 /*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
  *
- * Project Name: SPOT - Free Bootstrap 3 Theme
+ * Project Name: Betalabs
  * Version: 1.0
- * URL: http://blacktie.co
  */
  
 /* FONTS */
@@ -14,7 +11,7 @@
 /* OVERALL ASPECT */
 
 body {
-  background-color: #f2f2f2;
+  background-color: #2d2d2d;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -46,7 +43,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #3EA5BB;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -56,12 +53,15 @@ a {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+
+
 a:hover,
 a:focus {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0;
 }
+
 
 a:before,
 a:after {
@@ -71,6 +71,7 @@ a:after {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+
 
  hr {
     display: block;
@@ -83,32 +84,30 @@ a:after {
 
 
 .navbar {
-	font-weight: 800;
-	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .navbar-inverse {
-	background: #2d2d2d;
-	border-color: #2d2d2d;
+    background: #2d2d2d;
+    border-color: #2d2d2d;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
+    background: #2d2d2d
 }
 
 .navbar-inverse .navbar-brand {
-	color: #999999;
-	font-weight: bolder;
-	font-size: 22px;
-	letter-spacing: 1px;
+    color: #999999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .navbar-inverse .navbar-brand i {
-	color: #ff7878;
-	font-size: 22px;
-	letter-spacing: 1px;
+    color: #ff7878;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 /*TILT*/
@@ -133,12 +132,12 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/mentors3c.jpg) no-repeat center top;
-	margin-top: -10px;
-	padding-top: 20px;
+	background: url(../img/mentors1b.jpg) no-repeat center top;
+/*	margin-top: 50px; */
+	padding-top: 60px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: top center;
 	min-height: 500px;
 	width: 100%;
 
@@ -164,10 +163,20 @@ a:after {
 
 #headerwrap h2 {
 	color: white;
-	font-size: 40px;
-	font-weight: 700;
+    margin-top: 100px;
+	font-size: 50px;
+	font-weight: 600;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
+}
+
+#headerwrap h3 {
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 40;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
 }
 
 /* Dark Grey Wrap */
@@ -182,6 +191,10 @@ a:after {
 	font-weight: 700;
 }
 
+#dg p {
+    color: white;
+}
+
 /* Light Grey */
 #lg {
 	background: #ebebeb;
@@ -192,6 +205,48 @@ a:after {
 
 #lg h4 {
 	font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+
+/* last call */
+
+#lc {
+    background: #e74c3c;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: left;
+}
+
+#lc h2 {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+
+}
+
+#lc p {
+
+    text-align: center;
+    color: white;
+
+}
+
+
+
+/* White wrap */
+#white {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    text-align: left;
+}
+
+#white h4 {
+    font-weight: 700;
     text-align: center;
 }
 
@@ -231,6 +286,9 @@ a:after {
 
 
 
+
+
+
 /* Footer Wrap */
 #f {
 	background: #2d2d2d;
@@ -247,6 +305,17 @@ a:after {
 #f i:hover {
 	color: #ff7878;
 }
+
+#f p {
+
+    color: white;
+}
+
+#f h2 {
+
+    color: white;
+}
+
 
 /****** SECTIONS *****/
 
@@ -340,22 +409,42 @@ a:after {
 
 
 #services {
-    background: #1abc9c;
-    margin-top: 25px;
+    background: #ebebeb;
+ /*   margin-top: 25px; */
     padding-top: 35px;
     padding-bottom: 35px;
 }
 #services h3 {
-    color: #fff;
+    color: #2f2f2f;
 }
 #services p {
-    color: #fff;
+    color: #2f2f2f;
 }
 #services i {
-    color: #fff;
+    color: #2f2f2f;
     font-size: 35px;
     margin-top: 22px;
 }
+
+
+#matches {
+    background: #ebebeb;
+ /*   margin-top: 25px; */
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#matches h3 {
+    color: #2f2f2f;
+}
+#matches p {
+    color: #2f2f2f;
+}
+#matches i {
+    color: #2f2f2f;
+    font-size: 35px;
+    margin-top: 22px;
+}
+
 
 /* ==========================================================================
    Pricing Tables
